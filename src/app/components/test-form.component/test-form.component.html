@@ -1,0 +1,54 @@
+<form class="page form container-fluid" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="wrapper">
+
+        <div class="radio-group">
+            <radioButton></radioButton>
+        </div>
+
+        <h1 class="form__header">{{filling.header}}</h1>
+
+        <div class="form-group form__form-group">
+            <label for="name">{{filling.name}}</label>
+            <input type="text" id="name" class="form-control" formControlName="name">
+            <div *ngIf="formErrors.name" class="error">
+                {{ formErrors.name }}
+            </div>
+        </div>
+
+        <div class="form-group form__form-group">
+            <label for="login">{{filling.login}}</label>
+            <input type="text" id="login" class="form-control" formControlName="login">
+            <div *ngIf="formErrors.login" class="error">
+                {{ formErrors.login }}
+            </div>
+        </div>
+
+        <div class="form-group form__form-group">
+            <label for="email">{{filling.email}}</label>
+            <input type="text" id="email" class="form-control" formControlName="email">
+            <div *ngIf="formErrors.email" class="error">
+                {{ formErrors.email }}
+            </div>
+        </div>
+
+        <div class="form-group form__form-group">
+            <label for="password">{{filling.password}}</label>
+            <input type="text" id="password" class="form-control" formControlName="password">
+            <div *ngIf="formErrors.password" class="error">
+                {{ formErrors.password }}
+            </div>
+        </div>
+
+        <div class="form-group form__form-group">
+            <label for="repeatPassword">{{filling.repeatPassword}}</label>
+            <input type="text" id="repeatPassword" class="form-control" formControlName="repeatPassword">
+            <div *ngIf="formErrors.repeatPassword" class="error">
+                {{ formErrors.repeatPassword }}
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-default form__button">
+            {{filling.buttonNext}}
+        </button>
+    </div>
+</form>

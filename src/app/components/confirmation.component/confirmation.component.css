@@ -1,0 +1,18 @@
+.confirmation {
+    min-height: 420px;
+    width: 40%;
+}
+
+.confirmation__header {
+    margin-bottom: 100px;
+}
+
+.confirmation__content {
+    margin-bottom: 60px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+

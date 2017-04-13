@@ -1,0 +1,25 @@
+.form__header {
+    padding-bottom: 20px;
+}
+
+.form__form-group {
+    padding-bottom: 8px;
+}
+
+.form__button {
+    float: right;
+    width: 40%;
+    margin-bottom: 40px;
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+.error {
+    color: darkred;
+}

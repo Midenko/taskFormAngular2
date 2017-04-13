@@ -1,0 +1,20 @@
+.page {
+    width: 40%;
+    border: 1px solid black;
+    margin: 10px 10px;
+}
+
+.wrapper {
+    padding: 10px 70px;
+}
+
+.radio-group {
+    float: right;
+    margin-top: 25px;
+}
+
+@media (max-width: 900px) {
+    .page {
+        width: 70%;
+    }
+}
